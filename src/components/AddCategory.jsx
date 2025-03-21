@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export default function AddCategory() {
+export default function AddCategory({ setCategories }) {
 
     const [inputValue, setInputValue] = useState('value initial')
 
@@ -10,8 +10,9 @@ export default function AddCategory() {
 
     const onSubmit = (event) => {
         event.preventDefault();
-        console.log(inputValue);
-        
+        if( inputValue.trim().length <= 1 ) return;
+        setCategories((categories => [inputValue, ...categories]))     
+        setInputValue('');   
     }
 
     return (
@@ -23,5 +24,5 @@ export default function AddCategory() {
                 onChange={ onInputChange }
             />
         </form>
-  )
+    )
 }
