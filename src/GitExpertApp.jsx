@@ -1,34 +1,34 @@
 import { useState } from "react"
 import AddCategory from "./components/AddCategory";
+import GifGrid from "./components/GifGrid";
 
 export default function GitExpertApp() {
     const [categories, setCategories] = useState(['One Punch', 'Eder'])
 
     const onAddCategory = (newCategory) => {
-        if(categories.includes(newCategory)) return
-        console.log(newCategory);
-        
+        if(categories.includes(newCategory)) return;
+
         setCategories([...categories, newCategory]);
     }
 
 
     return (
         <>
-            {/** Titulo */}
             <h1>GitExpertApp</h1>
 
-            {/** Input */}
             <AddCategory 
                 onNewCategory={ onAddCategory }
-                // setCategories={ setCategories } 
             />
         
-            {/** Listado de Gif */}
-            <ol>
-                { categories.map( category => {
-                    return <li key={category}>{category}</li>
-                }) }
-            </ol>
+        
+            { categories.map( category => {
+                return (
+                    <GifGrid 
+                        key={category}
+                        category={category} 
+                    />
+                )
+            }) }
         </>
 
     )
