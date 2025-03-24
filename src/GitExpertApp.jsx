@@ -4,10 +4,10 @@ import AddCategory from "./components/AddCategory";
 export default function GitExpertApp() {
     const [categories, setCategories] = useState(['One Punch', 'Eder'])
 
-    const onAddCategory = () => {
-        const newCategory = 'Nueva Categoria';
+    const onAddCategory = (newCategory) => {
         if(categories.includes(newCategory)) return
-
+        console.log(newCategory);
+        
         setCategories([...categories, newCategory]);
     }
 
@@ -18,7 +18,10 @@ export default function GitExpertApp() {
             <h1>GitExpertApp</h1>
 
             {/** Input */}
-            <AddCategory setCategories={ setCategories } />
+            <AddCategory 
+                onNewCategory={ onAddCategory }
+                // setCategories={ setCategories } 
+            />
         
             {/** Listado de Gif */}
             <ol>
