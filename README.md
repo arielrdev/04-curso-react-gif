@@ -1,12 +1,26 @@
-# React + Vite
+# 🧙‍♂️ GiphyApp - Buscador de GIFs en React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto fue desarrollado como parte del curso de **React: De cero a experto (Hooks y MERN)** impartido por [Fernando Herrera] en Udemy. Su objetivo es fortalecer conocimientos de React moderno, incluyendo **componentes funcionales**, **hooks personalizados**, **comunicación con APIs externas** y **despliegue profesional**.
 
-Currently, two official plugins are available:
+## 🚀 Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**GiphyApp** es una aplicación web interactiva que permite buscar y visualizar GIFs animados utilizando la REST API de [GIPHY](https://developers.giphy.com/). El usuario puede ingresar una categoría o palabra clave, y la app mostrará una cuadrícula de resultados animados.
 
-## Expanding the ESLint configuration
+### ✨ Características
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ Búsqueda dinámica de GIFs por categorías
+- ✅ Uso de hooks personalizados (`useFetchGifs`)
+- ✅ Manejo eficiente del estado con hooks de React
+- ✅ Grid animado de resultados
+- ✅ Código modular, limpio y reutilizable
+- ✅ Proyecto 100% funcional y listo para escalar
+
+## 🧩 Tecnologías Utilizadas
+
+- ⚛️ React (v19+)
+- 🎯 Vite (entorno de desarrollo rápido)
+- 💅 CSS (estilos personalizados)
+- 📡 API pública de GIPHY
+- 🔧 JavaScript moderno (ES6+)
+
+
