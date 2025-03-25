@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export default function AddCategory({ onNewCategory }) {
+export const AddCategory = ({ onNewCategory }) => { 
 
     const [inputValue, setInputValue] = useState('value initial')
 
@@ -20,9 +20,9 @@ export default function AddCategory({ onNewCategory }) {
             <input 
                 type="text" 
                 placeholder="Buscar gifs"
-                value={inputValue}
                 onChange={ onInputChange }
             />
         </form>
     )
+
 }

@@ -1,6 +1,5 @@
 import { useState } from "react"
-import AddCategory from "./components/AddCategory";
-import GifGrid from "./components/GifGrid";
+import { AddCategory, GifGrid } from "./components";
 
 export default function GitExpertApp() {
     const [categories, setCategories] = useState(['One Punch']);
@@ -11,7 +10,6 @@ export default function GitExpertApp() {
         setCategories([...categories, newCategory]);
     }
 
-
     return (
         <>
             <h1>GitExpertApp</h1>
@@ -19,8 +17,7 @@ export default function GitExpertApp() {
             <AddCategory 
                 onNewCategory={ onAddCategory }
             />
-        
-        
+                
             { categories.map( category => {
                 return (
                     <GifGrid 
@@ -30,6 +27,5 @@ export default function GitExpertApp() {
                 )
             }) }
         </>
-
     )
 }
