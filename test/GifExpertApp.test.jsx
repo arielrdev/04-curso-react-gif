@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react"
-import GitExpertApp from "../src/GitExpertApp"
+import GitExpertApp from "../src/GifExpertApp"
 
 describe('testing en  <GitExpertApp />', () => { 
     test('debe ser match con el snapshot', () => { 
