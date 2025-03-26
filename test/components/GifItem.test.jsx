@@ -23,5 +23,5 @@ describe('testing en <GifItem.jsx />', () => {
     test('debe mostrar el titulo como un texto en el componente', () => { 
         render(<GifItem title={title} url={url} /> );
         expect( screen.getByText( title ) ).toBeTruthy();
-     })
- })
+    })
+})
